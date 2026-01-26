@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoHub Clone - Subscriptions</title>
+  <link rel="stylesheet" href="subscription.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="side-toggle" />
+  <label for="side-toggle" class="overlay"></label>
+
+  <header class="topbar">
+    <div class="left">
+      <label for="side-toggle" class="icon burger">☰</label>
+      <div class="logo">VideoHub</div>
+    </div>
+
+    <form class="search">
+      <input type="text" placeholder="Search" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="right">
+      <button class="icon" type="button">＋</button>
+      <button class="icon" type="button">🔔</button>
+      <div class="avatar">K</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="trending.html">Trending</a>
+      <a href="subscriptions.html" class="active">Subscriptions</a>
+      <a href="#">Library</a>
+      <a href="#">History</a>
+
+      <hr>
+
+      <a href="#">Watch Later</a>
+      <a href="#">Liked Videos</a>
+      <a href="#">Settings</a>
+    </aside>
+
+    <main class="content">
+      <h1 class="page-title">Subscriptions</h1>
+
+      <div class="chips">
+        <button class="chip active">All</button>
+        <button class="chip">Live</button>
+        <button class="chip">Uploads</button>
+        <button class="chip">Recently Watched</button>
+      </div>
+
+      <section class="grid">
+        <article class="card live">
+          <div class="thumb">
+            <span class="li">LIVE</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">C</div>
+            <div class="text">
+              <h2>Live: Solving DSA Problems</h2>
+              <p>Code Academy • 12K watching</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">10:41</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">D</div>
+            <div class="text">
+              <h2>Flexbox Layout Practice</h2>
+              <p>Dev Shorts • 230K views</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">21:05</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">U</div>
+            <div class="text">
+              <h2>UI Design for Beginners</h2>
+              <p>UI Lab • 540K views</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">07:18</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">W</div>
+            <div class="text">
+              <h2>Responsive Navbar Tutorial</h2>
+              <p>Web School • 1.0M views</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">14:52</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">P</div>
+            <div class="text">
+              <h2>Portfolio Website Checklist</h2>
+              <p>Career Dev • 620K views</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+
+        <article class="card live">
+          <div class="thumb">
+            <span class="li">LIVE</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">G</div>
+            <div class="text">
+              <h2>Live: Gaming Stream</h2>
+              <p>GameZone • 8K watching</p>
+            </div>
+            <button class="sub-btn">Subscribed</button>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 VideoHub Clone</span>
+        <span>Subscriptions • Built with HTML + CSS</span>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>

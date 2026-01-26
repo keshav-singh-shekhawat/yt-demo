@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoHub Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Toggle must be before overlay + layout for sibling selectors -->
+  <input type="checkbox" id="side-toggle" />
+
+  <!-- Overlay (click to close) -->
+  <label for="side-toggle" class="overlay"></label>
+
+  <!-- Sticky Header -->
+  <header class="topbar">
+    <div class="left">
+      <label for="side-toggle" class="icon burger">☰</label>
+      <div class="logo">VideoHub</div>
+    </div>
+
+    <form class="search">
+      <input type="text" placeholder="Search" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="right">
+      <button class="icon" type="button">＋</button>
+      <button class="icon" type="button">🔔</button>
+      <div class="avatar">K</div>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <a href="#" class="active">Home</a>
+      <a href="trending.html">Trending</a>
+      <a href="subscription.html">Subscriptions</a>
+      <a href="#">Library</a>
+      <a href="#">History</a>
+
+      <hr>
+
+      <a href="#">Watch Later</a>
+      <a href="#">Liked Videos</a>
+      <a href="#">Settings</a>
+    </aside>
+
+
+    <main class="content">
+      <h1 class="page-title">Recommended</h1>
+      <div class="chips">
+        <button class="chip active">All</button>
+        <button class="chip">Music</button>
+        <button class="chip">Gaming</button>
+        <button class="chip">News</button>
+        <button class="chip">Live</button>
+        <button class="chip">Podcasts</button>
+        <button class="chip">WebDev</button>
+        <button class="chip">DSA</button>
+      </div>
+      <section class="shorts">
+        <h1 class="shorts-title">Shorts</h1>
+        <div class="shorts-row">
+
+    <article class="short">
+          <div class="short-thumb"></div>
+          <div class="short-meta">
+            <h3 class="short-title">CSS hover tricks</h3>
+            <p class="short-views">1.1M views</p>
+         </div>
+    </article>
+
+    <article class="short">
+      <div class="short-thumb"></div>
+      <div class="short-meta">
+        <h3 class="short-title">Flexbox in 30s</h3>
+        <p class="short-views">820K views</p>
+      </div>
+    </article>
+
+    <article class="short">
+      <div class="short-thumb"></div>
+      <div class="short-meta">
+        <h3 class="short-title">Grid Quick Hack</h3>
+        <p class="short-views">540K views</p>
+      </div>
+    </article>
+
+    <article class="short">
+      <div class="short-thumb"></div>
+      <div class="short-meta">
+        <h3 class="short-title">Navbar in 1 min</h3>
+        <p class="short-views">2.3M views</p>
+      </div>
+    </article>
+
+    <article class="short">
+      <div class="short-thumb"></div>
+      <div class="short-meta">
+        <h3 class="short-title">Button Animations</h3>
+        <p class="short-views">610K views</p>
+      </div>
+    </article>
+
+    <article class="short">
+      <div class="short-thumb"></div>
+      <div class="short-meta">
+        <h3 class="short-title">Responsive Basics</h3>
+        <p class="short-views">980K views</p>
+      </div>
+    </article>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card live">
+          <div class="thumb">
+            <span class="li">LIVE</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">C</div>
+            <div class="text">
+              <h2>HTML + CSS Full Course</h2>
+              <p>Code Academy • 1.2M views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card live">
+          <div class="thumb">
+            <span class="li">LIVE</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">D</div>
+            <div class="text">
+              <h2>Flexbox in 15 minutes</h2>
+              <p>Dev Shorts • 540K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">15:02</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">F</div>
+            <div class="text">
+              <h2>Grid Layout Mastery</h2>
+              <p>Frontend Pro • 830K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">09:33</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">U</div>
+            <div class="text">
+              <h2>Animations + Transitions</h2>
+              <p>UI Lab • 410K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">18:20</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">P</div>
+            <div class="text">
+              <h2>Build a Portfolio Website</h2>
+              <p>Career Dev • 220K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">06:55</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">W</div>
+            <div class="text">
+              <h2>Responsive Design Basics</h2>
+              <p>Web School • 900K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <span>© 2026 VideoHub</span>
+    <span>Made by Keshav</span>
+  </footer>
+
+
+</body>
+</html>

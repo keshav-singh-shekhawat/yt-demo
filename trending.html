@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoHub Clone - Trending</title>
+  <link rel="stylesheet" href="trending.css" />
+</head>
+<body>
+
+  <!-- Toggle must be before overlay + layout for sibling selectors -->
+  <input type="checkbox" id="side-toggle" />
+
+  <!-- Overlay (click to close) -->
+  <label for="side-toggle" class="overlay"></label>
+
+  <!-- Sticky Header -->
+  <header class="topbar">
+    <div class="left">
+      <label for="side-toggle" class="icon burger">☰</label>
+      <div class="logo">VideoHub</div>
+    </div>
+
+    <form class="search">
+      <input type="text" placeholder="Search" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="right">
+      <button class="icon" type="button">＋</button>
+      <button class="icon" type="button">🔔</button>
+      <div class="avatar">K</div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <a href="index.html">Home</a>
+      <a href="trending.html" class="active">Trending</a>
+      <a href="subscription.html">Subscriptions</a>
+      <a href="#">Library</a>
+      <a href="#">History</a>
+
+      <hr>
+
+      <a href="#">Watch Later</a>
+      <a href="#">Liked Videos</a>
+      <a href="#">Settings</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+      <h1 class="page-title">Trending</h1>
+
+      <div class="chips">
+        <button class="chip active">Today</button>
+        <button class="chip">This Week</button>
+        <button class="chip">This Month</button>
+      </div>
+
+      <section class="featured">
+  <h2 class="featured-title">Featured</h2>
+
+  <article class="card featured-card live">
+    <div class="thumb">
+      <span class="li">LIVE</span>
+      <span class="duration">LIVE NOW</span>
+    </div>
+
+    <div class="meta">
+      <div class="ch-avatar">V</div>
+      <div class="text">
+        <h2>Live: Building VideoHub Trending Page</h2>
+        <p>VideoHub Dev • 120K watching</p>
+      </div>
+      <button class="sub-btn">Subscribe</button>
+    </div>
+  </article>
+</section>
+
+
+      <section class="grid">
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">12:10</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">T</div>
+            <div class="text">
+              <h2>Top Trending UI Designs</h2>
+              <p>Trend Lab • 2.1M views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">08:44</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">G</div>
+            <div class="text">
+              <h2>Gaming Highlights of the Week</h2>
+              <p>GameZone • 3.4M views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">15:37</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">N</div>
+            <div class="text">
+              <h2>Today’s Biggest Tech News</h2>
+              <p>NewsByte • 1.8M views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card live">
+          <div class="thumb">
+            <span class="li">LIVE</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">L</div>
+            <div class="text">
+              <h2>Live: Coding a YouTube Clone</h2>
+              <p>Live Dev • 980K watching</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">06:55</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">W</div>
+            <div class="text">
+              <h2>Web Dev Trends 2026</h2>
+              <p>Web School • 900K views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <span class="duration">18:20</span>
+          </div>
+          <div class="meta">
+            <div class="ch-avatar">P</div>
+            <div class="text">
+              <h2>Portfolio Mistakes Everyone Makes</h2>
+              <p>Career Dev • 1.1M views</p>
+            </div>
+            <button class="sub-btn">Subscribe</button>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span>© 2026 VideoHub Clone</span>
+        <span>Trending • Built with HTML + CSS</span>
+      </footer>
+    </main>
+  </div>
+
+</body>
+</html>
